@@ -11,7 +11,7 @@ namespace PluginSystem
     {
         static void Main(string[] args)
         {
-            IPrintAble printSystem = LoadItem<IPrintAble>(Path.GetFullPath("./PluginTemp.dll"), "MyPrint", "This Class In PluginTemp");
+            IPrintAble printSystem = LoadItem<IPrintAble>(Path.GetFullPath("../../../PluginTemp/bin/Debug/PluginTemp.dll"), "MyPrint", "This Class In PluginTemp");
 
             Console.WriteLine(printSystem.PrintData());
         }
